@@ -20,3 +20,7 @@ we generate the token in the developer settings in the git repo and paste it whe
 so if we just do git push multiple times there will be a prompt to enter your PAT.
 
 after that the Vscode/system will use the PAT to authenticate to remote repo whenever we are pushing new changes made.
+
+Git pull: everytime you need to push/make changes. we should first pull the repo using Git pull and later make changes and push it to the remote using git Push.
+
+pulling the repo is to make sure that we are making changes on a latest file data and make sure there are no conflcits betwenn the changes made by 2 or more individuals.
