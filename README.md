@@ -1,2 +1,2 @@
-# Linux-revise
+# DevOps - revision
 The repo contains all the linux related information, files, objects etc.
