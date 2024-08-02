@@ -10,6 +10,6 @@ NFR:
 2.) username and password shouldn't be hardcoded as it is aganist data or security compliance.
 3.) the code should run the same or produce the same results when it ran multiple times.
 
-we should follow above 3 when making to create a automation so it is standard, reliable and efficent.
+we should follow above 3 when creating a automation so it is standard, reliable and efficent.
 
 
