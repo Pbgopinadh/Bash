@@ -59,8 +59,21 @@ so to resolve it i changed the owner of the git repo directory from root to ec2-
 there are special varaibles those are meant to retrieve some default values from the system.
 
 for example: $0 - this argument/special variable contains the script that is running.
+
 $* - this shows all the arguments present in the script.
 $# - this shows no of arguments present in the script.
 
 chmod 755 /filepath -> this is used to modify the permission of the script
 chown -R (recursive for directory) owner:group /filepath -> this is used to change the owner and group asscioated with that file/directory.
+
+exit codes $? - gives the exit code of the 
+
+In shell scripting, the exit code provided by $? reflects the exit status of the most recently executed command or pipeline, not necessarily the entire script.
+
+so exit codes are mainly useful in debugging a program ->  0 - 255 are the range of the code.
+
+                                                        0 - success of the command 
+
+                                                        1 - 125 -> some failure of the commands
+
+                                                        125 + -> system failure.
