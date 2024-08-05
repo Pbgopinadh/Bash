@@ -3,7 +3,7 @@
 name=$1
 Age=$2
 
-echo -e "Hi!, My name is $name Nice to meet you \nmy age is $age"
+echo -e "Hi!, My name is $name Nice to meet you \nmy age is $Age"
 echo "$(whoami) is the one executing this $0 script".
 echo "the arguments are $*"
 echo "the arguments are $#"
