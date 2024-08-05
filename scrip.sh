@@ -8,4 +8,4 @@ echo "$(whoami) is the one executing this $0 script".
 echo "the arguments are $*"
 echo "the arguments are $#"
 
-echo -e "\e[32m this is a warning [0m"
+echo -e "\e[32m this is a warning \e[0m"
