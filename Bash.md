@@ -52,3 +52,7 @@ when printing a undeclared variable the bash/shell doesnt throw a error instead 
 bash will consider the undeclared variable as null.
 Arguments - arguments helps to retreive the values from the command line.
 
+Here's an error -> so when i try to git pull in a directory whose owner is different from the user i am currently git pulling it throws an error stating that dubious ownership. this is beacuse the owner of the directory and user that is trying to git pull and make changes are different.
+
+so to resolve it i changed the owner of the git repo directory from root to ec2-user.
+
