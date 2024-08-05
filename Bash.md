@@ -50,6 +50,5 @@ StudentNames (SnakeCase)
 
 when printing a undeclared variable the bash/shell doesnt throw a error instead it consider it as null so we have to keep this in mind.
 bash will consider the undeclared variable as null.
-
 Arguments - arguments helps to retreive the values from the command line.
 
