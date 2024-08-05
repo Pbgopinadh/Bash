@@ -1,2 +1,2 @@
 # DevOps - revision
-The repo contains all the linux related information, files, objects etc.
+The repo contains all the Devops related Articles, information, files, objects etc.
