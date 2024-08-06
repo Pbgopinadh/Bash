@@ -25,11 +25,11 @@ elif [ $a -ge $b ] ; then
 
 fi
 
-if [ -z "$a"]; then
+if [ -z "$a" ] ; then
     echo "variable is empty"
 fi
 
-if [ -n "$a"]; then
+if [ -n "$a" ] ; then
     echo "variable is not empty"
 fi
 
