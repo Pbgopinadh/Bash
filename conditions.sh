@@ -10,7 +10,9 @@ if [ $number = 0 ] ; then
 elif [ $number = 1 ] ; then 
 
     echo "starting the system"
-    exit 1
+    exit 1 # this exit code will be the command exit code which can be seen by the $? command. 
+
+# so for debug puporses/automating based on the exit code we can use the exit code.
 
 elif [ $number = 2 ] ; then 
 

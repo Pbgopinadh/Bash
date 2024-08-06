@@ -195,9 +195,16 @@ if, elif (else if) , else
     ### Explore the file types, There are 7 types on files in Linux.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+# /dev/null
 
+this is a special path where we can send a output to be nullified.
+
+eg: ls -ltr > /dev/null the output wont shown and that is sent to null
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Loops: very important concept
 
+For loop, while loop , until loop: 
 
 
 
