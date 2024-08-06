@@ -77,3 +77,18 @@ so exit codes are mainly useful in debugging a program ->  0 - 255 are the range
                                                         1 - 125 -> some failure of the commands
 
                                                         125 + -> system failure.
+
+so in as400 we use the job description and library list which are specific to user. 
+In linux. for example if we want a startup script for a specific user -> there is a method.
+so for example lets say gp alias for git pull will only be valid for that session and if we go to a new session it no longers work. (this is just an example)
+
+so there is a file which is hiddedn in our home directory [.bash_profile] in this we can provide the start script or commands that should execute when ever a new session is started. so by editing this using a text editor we can make use this more.
+
+so i used the below script as my startup script so that the directory on session start will be git directory and git pull will happen to download latest data from the remote repo. this is how we can use the .bash_profile effectively.
+
+# User specific environment and startup programs
+sudo alias gp='git pull'
+echo "Hi sir welcome home lets get started"
+cd /home/ec2-user/DevOps
+git pull
+    
