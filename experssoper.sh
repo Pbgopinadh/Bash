@@ -26,15 +26,15 @@ elif [ $a -ge $b ] ; then
 fi
 
 if [ -z "$a"]; then
-echo "variable is empty"
+    echo "variable is empty"
 fi
 
 if [ -n "$a"]; then
-echo "variable is not empty"
+    echo "variable is not empty"
 fi
 
 if [ -e "/home/ec2-user/DevOps/function.sh" ]; then
-echo "variable is not empty"
+    echo "object is present"
 fi
 
 if [ -f "/home/ec2-user/DevOps/function.sh" ]; then
