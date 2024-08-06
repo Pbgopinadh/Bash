@@ -12,3 +12,5 @@ echo "logic/data"
 }
 
 functioname #just mentioning the name of the function will call the function.
+
+#Functions helps in keeping the code dry.

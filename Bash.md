@@ -99,3 +99,35 @@ There are 4 types of commands in RHEL/Linux
 2. aliases - alias is the anothername given to a command for our comfort.
 3. shell built in command - these commands comes with the shell or os. where as the binary are like applicationm types. we can see by using the type command.
 4. Functions - like any other programming language a function is a set to code/ groups of commands with logic which can be re-used.
+
+Also $(command) - output of the command will be displayed. so $(uptime) - this is how we see the runtime $() - executes the command and provide us the output.
+
+Re-directors:
+
+In simple terms, a redirector in a shell is a tool that lets you control where the output of a command goes or where it comes from.
+
+output re-directors:
+>: Redirects the output of a command to a file, overwriting the file if it already exists.
+Example: echo "Hello" > file.txt (writes "Hello" to file.txt, replacing any existing content).
+
+>>: Redirects the output to a file, appending to the file if it already exists.
+Example: echo "World" >> file.txt (adds "World" to the end of file.txt).
+
+Error Redirector (2> and 2>>):
+2>: Redirects error messages to a file, overwriting the file if it already exists.
+Example: ls non_existing_file 2> error.txt (writes error messages to error.txt).
+
+2>>: Redirects error messages to a file, appending them if the file already exists.
+Example: ls non_existing_file 2>> error.txt (adds error messages to the end of error.txt).
+
+Combined Redirector (&> and &>>):
+&>: Redirects both standard output and errors to a file, overwriting the file if it exists.
+Example: command &> all_output.txt (writes both output and errors to all_output.txt).
+
+&>>: Redirects both standard output and errors to a file, appending to the file if it exists.
+Example: command &>> all_output.txt (adds both output and errors to the end of all_output.txt).
+
+Input Redirector (<):
+<: Redirects input from a file to a command. gives inputs from a file to a command.
+Example: sort < input.txt (reads from input.txt and sorts its content).
+
