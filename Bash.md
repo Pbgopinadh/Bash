@@ -152,7 +152,6 @@ like any programming language the conditions are same.
 
 if, elif (else if) , else
 
-operators:
 
 ### Expressions are categorized in to three types and based on the expression, we need to use operators
 ```
@@ -161,7 +160,7 @@ operators:
     3. Files
 ```
 
-Operators on numbers:
+# Operators on numbers:
 ```
     -eq , -ne , -gt, -ge, -lt, -le
 
@@ -169,7 +168,7 @@ Operators on numbers:
     [ 1 -ne 1 ]
 ```
 
-Operators on Strings:
+# Operators on Strings:
 
     = , == , !=
 
@@ -183,7 +182,7 @@ Operators on Strings:
     -z and -n are inverse proportional options
 
 
-Operators on files:
+# Operators on files:
 
     Lot of operators are available and you can check them using man pages of bash 
 
@@ -194,6 +193,12 @@ Operators on files:
     [ -d xyz ]  -> True if file exists and it is a directory
 
     ### Explore the file types, There are 7 types on files in Linux.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Loops: very important concept
+
+
 
 
 

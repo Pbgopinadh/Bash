@@ -5,14 +5,17 @@ number=$1
 if [ $number = 0 ] ; then 
 
     echo "shutting down the system" # intendation matters and sytanx matters
+    exit 0
 
 elif [ $number = 1 ] ; then 
 
     echo "starting the system"
+    exit 1
 
 elif [ $number = 2 ] ; then 
 
     echo "safe mode"
+    exit 2
 
 elif [ $number = 3 ] ; then
 
