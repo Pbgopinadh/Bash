@@ -2,23 +2,23 @@
 
 number=$1
 
-if [$number = 0]; then 
+if [$number = 0] ; then 
 
 echo "shutting down the system"
 
-elif [$number = 1]; then 
+elif [$number = 1] ; then 
 
 echo "starting the system"
 
-elif [$number = 2]; then 
+elif [$number = 2] ; then 
 
 echo "safe mode"
 
-elif [$number = 3]; then
+elif [$number = 3] ; then
 
 echo "GUI mode"
 
-elif [$number = 4]; then
+elif [$number = 4] ; then
 
 echo "undefined mode for debugging"
 
