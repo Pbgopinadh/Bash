@@ -4,6 +4,7 @@
 
 a=$1
 b=$2
+c=$3
 
 if [ $a -eq $b ] ; then
     echo 'they are equal'
@@ -25,7 +26,7 @@ elif [ $a -ge $b ] ; then
 
 fi
 
-if [ -z "$a" ] ; then
+if [ -z "$c" ] ; then
     echo "variable is empty"
 fi
 
