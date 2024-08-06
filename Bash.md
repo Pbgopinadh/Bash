@@ -86,12 +86,15 @@ so there is a file which is hiddedn in our home directory [.bash_profile] in thi
 
 so i used the below script as my startup script so that the directory on session start will be git directory and git pull will happen to download latest data from the remote repo. this is how we can use the .bash_profile effectively.
 
+--------------------------------------------------------------------------------------------------------------------------
+
 # User specific environment and startup programs
 sudo alias gp='git pull'
 echo "Hi sir welcome home lets get started"
 cd /home/ec2-user/DevOps
 git pull
 
+--------------------------------------------------------------------------------------------------------------------------
 
 There are 4 types of commands in RHEL/Linux
 
@@ -102,32 +105,53 @@ There are 4 types of commands in RHEL/Linux
 
 Also $(command) - output of the command will be displayed. so $(uptime) - this is how we see the runtime $() - executes the command and provide us the output.
 
-Re-directors:
+--------------------------------------------------------------------------------------------------------------------------
+
+# Re-directors:
 
 In simple terms, a redirector in a shell is a tool that lets you control where the output of a command goes or where it comes from.
 
-output re-directors:
+--------------------------------------------------------------------------------------------------------------------------
+
+# output re-directors:
 >: Redirects the output of a command to a file, overwriting the file if it already exists.
 Example: echo "Hello" > file.txt (writes "Hello" to file.txt, replacing any existing content).
 
 >>: Redirects the output to a file, appending to the file if it already exists.
 Example: echo "World" >> file.txt (adds "World" to the end of file.txt).
 
-Error Redirector (2> and 2>>):
+--------------------------------------------------------------------------------------------------------------------------
+
+# Error Redirector (2> and 2>>):
 2>: Redirects error messages to a file, overwriting the file if it already exists.
 Example: ls non_existing_file 2> error.txt (writes error messages to error.txt).
 
 2>>: Redirects error messages to a file, appending them if the file already exists.
 Example: ls non_existing_file 2>> error.txt (adds error messages to the end of error.txt).
 
-Combined Redirector (&> and &>>):
+--------------------------------------------------------------------------------------------------------------------------
+
+# Combined Redirector (&> and &>>):
 &>: Redirects both standard output and errors to a file, overwriting the file if it exists.
 Example: command &> all_output.txt (writes both output and errors to all_output.txt).
 
 &>>: Redirects both standard output and errors to a file, appending to the file if it exists.
 Example: command &>> all_output.txt (adds both output and errors to the end of all_output.txt).
 
-Input Redirector (<):
+--------------------------------------------------------------------------------------------------------------------------
+
+# Input Redirector (<):
 <: Redirects input from a file to a command. gives inputs from a file to a command.
 Example: sort < input.txt (reads from input.txt and sorts its content).
+
+--------------------------------------------------------------------------------------------------------------------------
+
+# Condtions:
+
+like any programming language the conditions are same.
+
+if, elif (else if) , else
+
+
+
 
