@@ -8,7 +8,7 @@ b=$2
 if [ $a -eq $b ] ; then
     echo 'they are equal'
 
-elif [ $a -nq $b ] ; then
+elif [ $a -ne $b ] ; then
     echo 'they are not equal'
 
 elif [ $a -lt $b ] ; then
