@@ -91,4 +91,11 @@ sudo alias gp='git pull'
 echo "Hi sir welcome home lets get started"
 cd /home/ec2-user/DevOps
 git pull
-    
+
+
+There are 4 types of commands in RHEL/Linux
+
+1. Binary - commands that are present in /usr/bin or /usr/sbin. or user commands are binary commands. we can see by using the type command
+2. aliases - alias is the anothername given to a command for our comfort.
+3. shell built in command - these commands comes with the shell or os. where as the binary are like applicationm types. we can see by using the type command.
+4. Functions - like any other programming language a function is a set to code/ groups of commands with logic which can be re-used.
