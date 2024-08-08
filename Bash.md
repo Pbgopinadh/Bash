@@ -237,6 +237,9 @@ done.
 so to solve most of the above problems we use configure management tool. - Namely Ansible.
 
 
+/etc/resolve.conf will contain the naming server where the domain name is resolved to IP adresses.
 
+nameserver [ip adress]
+can contain multiple nameserver
 
 
