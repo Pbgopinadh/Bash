@@ -226,12 +226,16 @@ do
 
 done.
 
-> problems of bash/shell scripting:
+# problems of bash/shell scripting:
 
 1.) Shell is imperative. means we have to be more specific abour our requirements. a work flow with more specific instructions.
+
 2.) shell is very tought at scale. when we have a scaling infrastructure. then shell will be more complex.
+
 3.) shell is homogenous -> means if i have more flavours of linux. then i have to write different commands for different flavors of lunux.
+
 4.) the script should be locally present in the server to execute them.
+
 5.) manually login into server and execute the scripts.
 
 so to solve most of the above problems we use configure management tool. - Namely Ansible.
