@@ -1,18 +1,20 @@
-Bash scripting for automation.
+# Bash scripting for automation.
 
 Automation is very easy as we just have to copy and paste the entire commands in a single file and later execute with bash <script-name> its advisable if the bash script has .sh as extension even though it doesnt matter.
 
 Function requirement (FR) : the logic of the code.
 Non - functional requiremnet (NFR)
 
-NFR:
+# NFR:
 1.) the code should be dry (the code/code pattern shouldn't be repeated more than once) if yes then we have to effciently use the code multiple time. lets say funtion/procedures etc.
+
 2.) username and password shouldn't be hardcoded as it is aganist data or security compliance.
+
 3.) the code should run the same or produce the same results when it ran multiple times.
 
 we should follow above 3 when creating a automation so it is standard, reliable and efficent.
 
-Bash sytanx in the bash script:
+# Bash sytanx in the bash script:
 
 #!/bin/bash --> this is called shebang and it is first line of the code. so basically we are telling the script which intrpreter to use.
 it can /bin/python for python scripts ,  /bin/sh and many more. only the first line of the code can be started with # and after that the intrepreter will consider it as comment.
@@ -28,7 +30,7 @@ we can even use color schema to the words to indicate something is error and oth
 
 color: echo -e "\e[color_number_m content \e[0m" -> this will add color to the text.4 (foreground) we can even add the background color to a text.  (which is not important right now)
 
-Variables: varaibles are something that hold a value.
+# Variables: varaibles are something that hold a value.
 
 In linux/shell, there are no data types by defauly everthing is a string. so this can be considered as both advantage and disadvantage.
 
@@ -56,7 +58,7 @@ Here's an error -> so when i try to git pull in a directory whose owner is diffe
 
 so to resolve it i changed the owner of the git repo directory from root to ec2-user.
 
-there are special varaibles those are meant to retrieve some default values from the system.
+## there are special varaibles those are meant to retrieve some default values from the system.
 
 for example: $0 - this argument/special variable contains the script that is running.
 
@@ -82,13 +84,16 @@ so in as400 we use the job description and library list which are specific to us
 In linux. for example if we want a startup script for a specific user -> there is a method.
 so for example lets say gp alias for git pull will only be valid for that session and if we go to a new session it no longers work. (this is just an example)
 
-so there is a file which is hiddedn in our home directory [.bash_profile] in this we can provide the start script or commands that should execute when ever a new session is started. so by editing this using a text editor we can make use this more.
+## [.bash_profile] 
+
+so there is a file which is hiddedn  in our home directory in this we can provide the start script or commands that should execute when ever a new session is started. so by editing this using a text editor we can make use this more.
 
 so i used the below script as my startup script so that the directory on session start will be git directory and git pull will happen to download latest data from the remote repo. this is how we can use the .bash_profile effectively.
 
 --------------------------------------------------------------------------------------------------------------------------
 
 # User specific environment and startup programs
+
 sudo alias gp='git pull'
 echo "Hi sir welcome home lets get started"
 cd /home/ec2-user/DevOps
