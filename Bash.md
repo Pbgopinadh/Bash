@@ -62,8 +62,9 @@ so to resolve it i changed the owner of the git repo directory from root to ec2-
 
 for example: $0 - this argument/special variable contains the script that is running.
 
-$* - this shows all the arguments present in the script.
-$# - this shows no of arguments present in the script.
+this $* - this shows all the arguments present in the script.
+
+this $# - this shows no of arguments present in the script.
 
 chmod 755 /filepath -> this is used to modify the permission of the script
 chown -R (recursive for directory) owner:group /filepath -> this is used to change the owner and group asscioated with that file/directory.
