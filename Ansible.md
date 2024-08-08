@@ -51,7 +51,7 @@ Ansible inventory contains all the servers for which we are going to do configua
 
 we can even send any commands to node servers and get the results either manually( sending 1 command at a time ) or by automatic (playbook: instruction return in yaml language) -> playbook are waht we use for configuration management mostly.
 
-Ansible modules (upto ansible 2.9) and collections (terminology from 2.9 to present and future.)
+### Ansible modules (upto ansible 2.9) and collections (terminology from 2.9 to present and future.)
 
 Ansible Modules: Similar to Python libraries, they extend functionality and perform specific actions within Ansible playbooks. Each module provides a way to manage different aspects of system configuration and automation.
 
