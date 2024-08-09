@@ -4,7 +4,4 @@
     - name: ping resule
       ansible.builtin.ping: 
         data: pong
-    
-    - name: setting-hostname
-      ansible.builtin.hostname:
-          name: rhel9-testing.
+  
