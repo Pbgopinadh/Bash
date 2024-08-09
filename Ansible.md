@@ -104,5 +104,9 @@ tasks are actionable items.
 Playbook are the way to ansible automation script. 
 we have to know YAML language to write this playbook. lplaybook are scripted in YAML language.
 
+no 2 tasks in a play have same name and no two plays in a playbook have the same name.
 
+## How to execute/run a playbook
+
+ansible-playbook -i nodes [just the inventory name groups will be provided in the hosts paramter in the yaml] -e ansible_username=ec2-user -e ansible_password=DevOps321 ping-playbook.yaml [playbook name]
 

@@ -1,6 +1,10 @@
 - name: pinging
   hosts: all    
   tasks: 
-    - name: sending a message
+    - name: ping resule
       ansible.builtin.ping: 
         data: pong
+    
+    - name: setting-hostname
+      ansible.builtin.hostname:
+          name: srivani
