@@ -12,5 +12,7 @@
       ansible.builtin.debug:
         msg: 
           - "testing the varialbe concept - {{ping}}"   
-          - "testing the varialbe concept - {{msg}}"                 
+          - "testing the varialbe concept - {{msg}}"     
+      vars:
+        - ping: task level var            
     
