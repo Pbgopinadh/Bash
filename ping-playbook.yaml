@@ -1,7 +1,14 @@
 - name: pinging
-  hosts: all    
+  hosts: all  
+  vars:
+    - msg: hello
+    - ping: this is pinged.  
   tasks: 
     - name: ping resule
       ansible.builtin.ping: 
         data: pong
-  
+
+    - name: Prints lines of messages
+      ansible.builtin.debug:
+        msg: "testing the varialbe concept - {{msg}}"                     # {{var}} - this is how we print a variable.
+    
