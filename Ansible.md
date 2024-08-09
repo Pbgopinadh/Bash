@@ -79,3 +79,30 @@ ansible: This is the command-line tool for running ad-hoc commands with Ansible.
 [-a uptime]: This provides the argument to the shell module, specifying the command uptime that you want to run on the remote hosts. The uptime command shows how long the system has been running and other related information.
 
 but we wont be using the above as these are manual execution of commands -> now, we use the concept of playbook for automation of configuration management.
+
+
+### Inventory
+
+Inventory is where groups are present. so we group certain server into a group based upon application installed on them or their functionality we group them in a way where configuaration management is similar on certain amount of VMs.
+
+[frontend] this is how we declare a group in a inventory file 
+ipadresses
+
+[backen]
+ipadresses
+
+there is another group call all where all the servers mentioned in the inventory file will considered when executing the ansible commands.
+
+ansible -i nodes all [instaed of mentioning all we can specify the group name like frontend, backend etc so that specific configuration will be done on specific VMs] -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ansible.builtin.shell -a uptime
+
+## What is a Playbook
+
+Playbook are list of plays
+plays are list of tasks
+tasks are actionable items.
+
+Playbook are the way to ansible automation script. 
+we have to know YAML language to write this playbook. lplaybook are scripted in YAML language.
+
+
+

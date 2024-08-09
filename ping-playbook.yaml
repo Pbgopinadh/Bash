@@ -1,0 +1,6 @@
+- name: hello msgs
+  hosts: all    
+  taks: 
+    - name: sending a message
+      ansible.builtin.ping: 
+        data: pong
