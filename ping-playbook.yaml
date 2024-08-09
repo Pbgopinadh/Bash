@@ -1,4 +1,4 @@
-- name: hello msgs
+- name: pinging
   hosts: all    
   taks: 
     - name: sending a message
