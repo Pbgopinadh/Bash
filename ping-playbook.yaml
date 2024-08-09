@@ -1,6 +1,6 @@
 - name: pinging
   hosts: all    
-  taks: 
+  tasks: 
     - name: sending a message
       ansible.builtin.ping: 
         data: pong
