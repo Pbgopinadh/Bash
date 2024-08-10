@@ -12,13 +12,11 @@
       ansible.builtin.ping: 
         data: pong
 
-    - name: gatherfactsmodule
-      ansible.builtin.setup: 
-
     - name: Prints lines of messages
       ansible.builtin.debug:
         msg: 
           - "testing the varialbe concept - {{ping}}"   
-          - "testing the varialbe concept - {{msg}}"     
+          - "testing the varialbe concept - {{msg}}"  
+          - "the user profile running this is {{ansible_user_id}} and the cd is {{ansible_user_dir}}"   
       vars:
         - ping: task level var            
