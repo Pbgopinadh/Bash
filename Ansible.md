@@ -136,3 +136,7 @@ then if a task fail the subsequent task should be executed. so to acheieve that 
 variables: 
 
 tags are important concept. by using tags we can execute a certain no of if tasks instead of whole playbook play and tasks.
+
+so tags are given at play level and task level: so if a play and task in another play has same tag then, entire play and that specifc task of other will get executed.
+
+

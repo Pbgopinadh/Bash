@@ -1,0 +1,19 @@
+- name: installing software
+  hosts: all
+  tags: install
+  tasks:
+    - name: install the nginx
+      tag: install.nginx  
+      ansible.builtin.package:
+        name: nginx
+        state: present # state present means it should install the nginx, absent means it should remove/uninstall the nginx, latest means update the latest/update.
+    
+- name: installing software
+  hosts: all
+  tags: uninstall
+  tasks:
+    - name: install the nginx
+      tag: uninstall.nginx  
+      ansible.builtin.package:
+        name: nginx
+        state: absent
