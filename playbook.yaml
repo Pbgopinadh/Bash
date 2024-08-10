@@ -1,6 +1,7 @@
 - name: pinging 
   hosts: all  # mention the group on which we have to do the configuration management.
-  gather_facts: false # by default this will be true. if kept to false then ansible dont gather facts before executing the play.
+
+  # gather_facts: false # by default this will be true. if kept to false then ansible dont gather facts before executing the play.
 
   vars:  # {{var}} - this is how we reference a variable.
     - msg: hello
@@ -10,6 +11,9 @@
     - name: ping resule
       ansible.builtin.ping: 
         data: pong
+
+    - name: gatherfactsmodule
+      ansible.builtin.gather_facts: 
 
     - name: Prints lines of messages
       ansible.builtin.debug:

@@ -113,3 +113,5 @@ ansible-playbook -i nodes [just the inventory name groups will be provided in th
 Ansible always gather facts before executing the plays to know the current status of the VM. so, we can disable the gathering facts option to save time.
 
 Ansible vault - used to encrypt and keep files secure. 
+
+
