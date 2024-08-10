@@ -26,5 +26,5 @@
   tasks:  
     - name: copying a file
       ansible.builtin.copy:
-        src: /home/ec2-user/
-        dest: /home/ec2-user
+        src: /home/ec2-user/testing.txt # on our system
+        dest: /home/ec2-user/testing.txt # on target system.
