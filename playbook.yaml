@@ -13,7 +13,7 @@
         data: pong
 
     - name: gatherfactsmodule
-      ansible.builtin.gather_facts: 
+      ansible.builtin.setup: 
 
     - name: Prints lines of messages
       ansible.builtin.debug:
