@@ -117,3 +117,12 @@ Ansible always gather facts before executing the plays to know the current statu
 Ansible vault - used to encrypt and keep files secure. 
 
 
+## error-handling
+
+by default the task are dependent on each other means the playbook is executed from top-bottom if there are no special conditions. plays are executed from top-bottom if there are no special conditions, the tasks in the plays are executed from top-bottom if there are no special conditions so if there is any error with the task the subsequent tasks will not be executed.
+
+but lets say we have a scenario where the installation of some applications doesn't have dependencies on one another.
+
+then if a task fail the subsequent task should be executed. so to acheieve that we use ignore_errors: true/yes etc.
+
+
