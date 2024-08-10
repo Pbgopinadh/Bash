@@ -17,6 +17,9 @@
         msg: 
           - "testing the varialbe concept - {{ping}}"   
           - "testing the varialbe concept - {{msg}}"  
-          - "the user profile running this is {{ansible_user_id}} and the cd is {{ansible_user_dir}}"   
+          - "the user profile running this is {{ansible_user_id}} and the cd is {{ansible_user_dir}}"  # ansible_user_id and ansible_user_dir are declared anywhere these are called magical varaibles or In Ansible, "magical variables" refer to built-in variables that are automatically available to playbooks, tasks, and roles
+          # if we keep the gathering_facts as false then we wont get the above variables.
+          - "the OS running is {{ansible_distribution}} and the version is {{ansible_distribution_version}}"
+
       vars:
         - ping: task level var            
