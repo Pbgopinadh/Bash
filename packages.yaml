@@ -8,6 +8,11 @@
       ansible.builtin.package:
         name: nginx
         state: present # state present means it should install the nginx, absent means it should remove/uninstall the nginx, latest means update the latest/update.
+    - name: copying a file
+    
+      ansible.builtin.copy:
+        src: /home/ec2-user/testing.txt # on our system
+        dest: /home/ec2-user/testing.txt # on target system.
     
 - name: installing software
   hosts: all
@@ -20,11 +25,4 @@
         name: nginx
         state: absent
 
-- name: how to copy a failed  
-  hosts: all
-  tags: copy
-  tasks:  
-    - name: copying a file
-      ansible.builtin.copy:
-        src: /home/ec2-user/testing.txt # on our system
-        dest: /home/ec2-user/testing.txt # on target system.
+
