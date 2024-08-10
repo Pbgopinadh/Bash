@@ -1,6 +1,6 @@
 - name: tags play level and task level
   hosts: all  # mention the group on which we have to do the configuration management.
-  tags: frontend
+  tags: eee
   tasks: 
     - name: front end
       tags: backend
