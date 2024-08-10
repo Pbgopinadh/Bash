@@ -3,7 +3,7 @@
   tags: install
   tasks:
     - name: install the nginx
-      tag: install.nginx  
+      tags: install.nginx  
       ansible.builtin.package:
         name: nginx
         state: present # state present means it should install the nginx, absent means it should remove/uninstall the nginx, latest means update the latest/update.
@@ -13,7 +13,7 @@
   tags: uninstall
   tasks:
     - name: install the nginx
-      tag: uninstall.nginx  
+      tags: uninstall.nginx  
       ansible.builtin.package:
         name: nginx
         state: absent
