@@ -1,5 +1,6 @@
 - name: installing software
   hosts: all
+  become: true
   tags: install
   tasks:
     - name: install the nginx
@@ -11,9 +12,11 @@
 - name: installing software
   hosts: all
   tags: uninstall
+  become: true
   tasks:
     - name: install the nginx
       tags: uninstall.nginx  
       ansible.builtin.package:
         name: nginx
         state: absent
+
