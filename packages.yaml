@@ -5,7 +5,6 @@
   tasks:
     - name: install the nginx
       tags: install.nginx  
-      become_user: ec2-user
       ansible.builtin.package:
         name: nginx
         state: present # state present means it should install the nginx, absent means it should remove/uninstall the nginx, latest means update the latest/update.
