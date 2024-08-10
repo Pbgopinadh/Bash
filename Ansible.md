@@ -125,4 +125,14 @@ but lets say we have a scenario where the installation of some applications does
 
 then if a task fail the subsequent task should be executed. so to acheieve that we use ignore_errors: true/yes etc.
 
+### important:
 
+> gather_facts: false # by default this will be true. if kept to false then ansible dont gather facts before executing the play.
+> ignore_errors: True # by this if there is any error the task execution will be ignored and move on to the another task.
+> ansible.builtin.shell: ps -ef | grep java | grep -v grep 
+> ansible.builtin.shell: uptime
+    register: sheout # this is a varaible where the output of the command execution lies.
+
+variables: 
+
+tags are important concept. by using tags we can execute a certain no of if tasks instead of whole playbook play and tasks.
