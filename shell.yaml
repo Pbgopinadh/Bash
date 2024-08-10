@@ -1,6 +1,7 @@
 - name: pinging 
   hosts: all  # mention the group on which we have to do the configuration management.
   # gather_facts: false # by default this will be true. if kept to false then ansible dont gather facts before executing the play.
+  ignore_unreachable: true
   vars:  # {{var}} - this is how we reference a variable.
     - msg: hello
     - ping: this is pinged. 
@@ -12,12 +13,12 @@
 
     - name: running a shell
       ansible.builtin.shell: uptime
-      register: sheout
+      register: sheout # this is a varaible where the output of the command execution lies.
 
     - name: Prints lines of messages
       ansible.builtin.debug:
         msg: 
-          - "testing the varialbe concept - {{sheout.stdout}}" 
+          - "testing the varialbe concept - {{sheout.stdout}}" # sheout.stdout -> this is called nested result. weher we would like to see certain part of the output.
 
       vars:
         - ping: task level var 
