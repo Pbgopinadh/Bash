@@ -9,7 +9,7 @@
   tasks:
     - name: task failed demo
       ansible.builtin.shell: ps -ef | grep java | grep -v grep 
-      ignore_error: True # by this if there is any error the task execution will be ignored and move on to the another task.
+      ignore_errors: True # by this if there is any error the task execution will be ignored and move on to the another task.
 
     - name: ping resule
       ansible.builtin.ping: 
