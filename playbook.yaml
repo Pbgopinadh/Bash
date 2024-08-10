@@ -1,4 +1,4 @@
-- name: pinging 
+- name: Varalibles and magic variables use 
   hosts: all  # mention the group on which we have to do the configuration management.
 
   # gather_facts: false # by default this will be true. if kept to false then ansible dont gather facts before executing the play.
