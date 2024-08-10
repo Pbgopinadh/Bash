@@ -20,3 +20,11 @@
         name: nginx
         state: absent
 
+- name: how to copy a failed  
+  hosts: all
+  tags: copy
+  tasks:  
+    - name: copying a file
+      ansible.builtin.copy:
+        src: /home/ec2-user/
+        dest: /home/ec2-user
