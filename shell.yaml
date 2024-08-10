@@ -12,7 +12,7 @@
 
     - name: running a shell
       ansible.builtin.shell: uptime
-       register: sheout
+      register: sheout
 
     - name: Prints lines of messages
       ansible.builtin.debug:
